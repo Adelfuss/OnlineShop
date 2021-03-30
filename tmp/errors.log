@@ -44,3 +44,7 @@
 =============
 [2021-03-09 21:51:58] Текст ошибки: Контроллер app\controllers\NameController не найден | Файл: D:\Openserver\Unpacked\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 42
 =============
+[2021-03-30 18:26:35] Текст ошибки: Страница не найдена | Файл: D:\Openserver\Unpacked\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=============
+[2021-03-30 18:55:18] Текст ошибки: Страница не найдена | Файл: D:\Openserver\Unpacked\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=============
