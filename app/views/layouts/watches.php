@@ -9,6 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
     <?=$this->getMeta();?>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
     <!--Custom-Theme-files-->
     <!--theme-style-->
@@ -16,7 +18,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--//theme-style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--start-menu-->
 </head>
 <body>
 <!--top-header-->
@@ -67,10 +68,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="container">
         <div class="header">
             <div class="col-md-9 header-left">
-                <div class="menu">
-                    <?php new \app\widgets\menu\Menu([
-                        'tpl' => WWW . '/menu/menu.php',
-                    ]); ?>
+                <div class="menu-container">
+                    <div class="menu">
+                        <?php new \app\widgets\menu\Menu([
+                            'tpl' => WWW . '/menu/menu.php',
+                        ]); ?>
+                    </div>
                 </div>
 <!--                <div class="top-nav">-->
 <!--                    <ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>-->
@@ -316,6 +319,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     });
 </script>
+<script src="megamenu/megamenu.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
