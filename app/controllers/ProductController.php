@@ -16,7 +16,7 @@ class ProductController extends AppController
         // хлебные крошки
 
         // связанные товары
-
+        $related = \R::getAll("SELECT * FROM related_product JOIN product ON product.id = related_product.related_id WHERE related_product.product_id = ?", [$product->id]);
         //записать в куки запрошенный товар
 
         // просмотренные товари
@@ -26,6 +26,6 @@ class ProductController extends AppController
         // модификации
 
         $this->setMeta($product->title, $product->description,$product->keywords);
-        $this->set(compact('product'));
+        $this->set(compact('product','related'));
     }
 }
